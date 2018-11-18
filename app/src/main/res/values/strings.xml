@@ -4,4 +4,10 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello First fragment</string>
     <string name="hello_blank_fragment2">Hello Second fragment</string>
+
+    <string-array name="country_arrays">
+        <item>PAK</item>
+        <item>IND</item>
+    </string-array>
+
 </resources>

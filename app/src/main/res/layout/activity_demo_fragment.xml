@@ -6,15 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".ui.fragment.DemoFragmentActivity">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Laumch Fragment"
-        android:onClick="launchFragment"
-        android:id="@+id/btn"
-        android:textAllCaps="false"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
 
     <FrameLayout
         android:layout_width="match_parent"
