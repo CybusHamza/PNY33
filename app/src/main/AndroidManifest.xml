@@ -8,23 +8,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.activity.MainActivity"/>
+        <activity android:name=".ui.activity.MainActivity" />
         <activity android:name=".ui.activity.SecondActivity" />
-        <activity android:name=".ui.fragment.DemoFragmentActivity">
+        <activity android:name=".ui.fragment.DemoFragmentActivity"></activity>
+
+        <service android:name=".service.MyService" />
+
+        <receiver android:name=".reciever.MyTImeChangeReciever">
+            <intent-filter>
+                <action android:name="android.intent.action.TIME_TICK" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".ui.listview.ContactActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <service android:name=".service.MyService"/>
-
-        <receiver android:name=".reciever.MyTImeChangeReciever">
-            <intent-filter>
-                <action android:name="android.intent.action.TIME_TICK"/>
-            </intent-filter>
-        </receiver>
     </application>
 
 </manifest>
