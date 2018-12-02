@@ -2,9 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.pnytrainings.myapplication">
 
-
-    <uses-permission android:name="android.permission.CAMERA"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:icon="@mipmap/ic_launcher"
@@ -24,9 +23,9 @@
             </intent-filter>
         </receiver>
 
-        <activity android:name=".ui.listview.ContactActivity">
-        </activity>
-        <activity android:name=".ui.multi_media.MultiMediaActivity">
+        <activity android:name=".ui.listview.ContactActivity"></activity>
+        <activity android:name=".ui.multi_media.MultiMediaActivity"/>
+        <activity android:name=".ui.activity.ContactsActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

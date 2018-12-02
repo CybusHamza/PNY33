@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <EditText
+        android:id="@+id/naem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Name"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="41dp"
+        android:layout_marginBottom="47dp"
+        android:layout_above="@+id/phone"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Number"
+        android:inputType="phone"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="137dp"
+        android:layout_marginBottom="94dp"
+        android:layout_above="@+id/submit"
+        android:layout_alignLeft="@+id/naem"
+        android:layout_alignStart="@+id/naem" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="save"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="312dp"
+        android:layout_marginBottom="163dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/phone"
+        android:layout_alignStart="@+id/phone" />
+
+    <Button
+        android:id="@+id/fetch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="fetch"
+        android:layout_alignBaseline="@+id/submit"
+        android:layout_alignBottom="@+id/submit"
+        android:layout_alignRight="@+id/phone"
+        android:layout_alignEnd="@+id/phone" />
+
+    <Button
+        android:id="@+id/update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46dp"
+        android:text="update"
+        android:layout_below="@+id/fetch"
+        android:layout_alignLeft="@+id/submit"
+        android:layout_alignStart="@+id/submit" />
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/update"
+        android:layout_alignBottom="@+id/update"
+        android:layout_alignLeft="@+id/fetch"
+        android:layout_alignStart="@+id/fetch"
+        android:text="delete" />
+
+</RelativeLayout>
