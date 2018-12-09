@@ -63,10 +63,15 @@ public class ContactsActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+                id.clear();
+                names.clear();;
+                phione.clear();
+
                 Cursor cursor = dataBase.fetch();
                 do
                 {
                     if (cursor != null) {
+
                         id.add(cursor.getString(0));
                         names.add(cursor.getString(1));
                         phione.add(cursor.getString(2));

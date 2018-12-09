@@ -26,7 +26,7 @@ public class DbHelper extends SQLiteOpenHelper {
 
     // DDL data defining language.
     String CREATE_CONTACTS_TABLE = "CREATE TABLE " + TABLE_NAME + "("
-            + KEY_ID + " INTEGER PRIMARY KEY AUTOINCREMENT" + KEY_NAME + " TEXT,"
+            + KEY_ID + " INTEGER PRIMARY KEY AUTOINCREMENT," + KEY_NAME + " TEXT,"
             + KEY_PH_NO + " TEXT" + ")";
 
 
