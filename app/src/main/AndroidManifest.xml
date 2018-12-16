@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
@@ -47,11 +48,11 @@
 
         <activity
             android:name=".ui.maps.MapsActivity"
-            android:label="@string/title_activity_maps">
-        </activity>
-        <activity android:name=".ui.shared_prefs.SharedPrefActivity">
-        </activity>
+            android:label="@string/title_activity_maps"></activity>
+        <activity android:name=".ui.shared_prefs.SharedPrefActivity"></activity>
         <activity android:name=".ui.json.JsonActivity">
+        </activity>
+        <activity android:name=".ui.volley.VolleyActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
